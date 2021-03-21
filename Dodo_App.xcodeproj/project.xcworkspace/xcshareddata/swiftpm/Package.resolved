@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "swift-html-parser",
+        "repositoryURL": "https://github.com/rnantes/swift-html-parser",
+        "state": {
+          "branch": "master",
+          "revision": "46ae8697e7e95f0379dec4d80b828e4dff114bf6",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

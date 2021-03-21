@@ -3,29 +3,64 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF54156126063D330032EB75 /* PizzaCarouseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF54156026063D330032EB75 /* PizzaCarouseView.swift */; };
+		AF541566260643F70032EB75 /* FoodStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF541565260643F70032EB75 /* FoodStore.swift */; };
+		AF541569260644250032EB75 /* FoodListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF541568260644250032EB75 /* FoodListViewModel.swift */; };
+		AF54156F260648D00032EB75 /* FoodList_TMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF54156E260648D00032EB75 /* FoodList_TMP.swift */; };
+		AF54159026065B380032EB75 /* SwiftHTMLParser in Frameworks */ = {isa = PBXBuildFile; productRef = AF54158F26065B380032EB75 /* SwiftHTMLParser */; };
 		AF6CD3312603BFC900CD8E59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6CD3302603BFC900CD8E59 /* AppDelegate.swift */; };
 		AF6CD3332603BFC900CD8E59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6CD3322603BFC900CD8E59 /* SceneDelegate.swift */; };
-		AF6CD3352603BFC900CD8E59 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6CD3342603BFC900CD8E59 /* ContentView.swift */; };
+		AF6CD3352603BFC900CD8E59 /* FoodChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6CD3342603BFC900CD8E59 /* FoodChooser.swift */; };
 		AF6CD3382603BFC900CD8E59 /* Dodo_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF6CD3362603BFC900CD8E59 /* Dodo_App.xcdatamodeld */; };
 		AF6CD33A2603BFCB00CD8E59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF6CD3392603BFCB00CD8E59 /* Assets.xcassets */; };
 		AF6CD33D2603BFCB00CD8E59 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF6CD33C2603BFCB00CD8E59 /* Preview Assets.xcassets */; };
 		AF6CD3402603BFCB00CD8E59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF6CD33E2603BFCB00CD8E59 /* LaunchScreen.storyboard */; };
+		AF6CD3492603C0EC00CD8E59 /* PizzaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6CD3482603C0EC00CD8E59 /* PizzaView.swift */; };
+		AFA79D7126040CBE00E6C15A /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA79D7026040CBE00E6C15A /* TabButton.swift */; };
+		AFA79D742604168A00E6C15A /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA79D732604168A00E6C15A /* NewsView.swift */; };
+		AFA79D77260416C800E6C15A /* NewsBackdropCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA79D76260416C800E6C15A /* NewsBackdropCard.swift */; };
+		AFA79D7A2604173900E6C15A /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA79D792604173900E6C15A /* ImageLoader.swift */; };
+		AFB62A882603C269005D6987 /* TypesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB62A872603C269005D6987 /* TypesViewModel.swift */; };
+		AFB62A8D2603C2BE005D6987 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB62A8C2603C2BE005D6987 /* Food.swift */; };
+		AFB62A922603C879005D6987 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB62A912603C879005D6987 /* MainMenuView.swift */; };
+		AFC18DDF2606A2AF0016B168 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC18DDE2606A2AF0016B168 /* ProfileView.swift */; };
+		AFC18DE22606A35F0016B168 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC18DE12606A35F0016B168 /* LocationView.swift */; };
+		AFC18DE52606A36D0016B168 /* BasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC18DE42606A36D0016B168 /* BasketView.swift */; };
+		AFC18DE82606A91E0016B168 /* dodo.html in Resources */ = {isa = PBXBuildFile; fileRef = AFC18DE72606A91E0016B168 /* dodo.html */; };
+		AFC18DED26074B7D0016B168 /* ScrollView+SelectionSpecificView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC18DEC26074B7C0016B168 /* ScrollView+SelectionSpecificView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF54156026063D330032EB75 /* PizzaCarouseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaCarouseView.swift; sourceTree = "<group>"; };
+		AF541565260643F70032EB75 /* FoodStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodStore.swift; sourceTree = "<group>"; };
+		AF541568260644250032EB75 /* FoodListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListViewModel.swift; sourceTree = "<group>"; };
+		AF54156E260648D00032EB75 /* FoodList_TMP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodList_TMP.swift; sourceTree = "<group>"; };
 		AF6CD32D2603BFC900CD8E59 /* Dodo_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dodo_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF6CD3302603BFC900CD8E59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF6CD3322603BFC900CD8E59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AF6CD3342603BFC900CD8E59 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AF6CD3342603BFC900CD8E59 /* FoodChooser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodChooser.swift; sourceTree = "<group>"; };
 		AF6CD3372603BFC900CD8E59 /* Dodo_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dodo_App.xcdatamodel; sourceTree = "<group>"; };
 		AF6CD3392603BFCB00CD8E59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF6CD33C2603BFCB00CD8E59 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AF6CD33F2603BFCB00CD8E59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF6CD3412603BFCB00CD8E59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF6CD3482603C0EC00CD8E59 /* PizzaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaView.swift; sourceTree = "<group>"; };
+		AFA79D7026040CBE00E6C15A /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
+		AFA79D732604168A00E6C15A /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		AFA79D76260416C800E6C15A /* NewsBackdropCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsBackdropCard.swift; sourceTree = "<group>"; };
+		AFA79D792604173900E6C15A /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		AFB62A872603C269005D6987 /* TypesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesViewModel.swift; sourceTree = "<group>"; };
+		AFB62A8C2603C2BE005D6987 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		AFB62A912603C879005D6987 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		AFC18DDE2606A2AF0016B168 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		AFC18DE12606A35F0016B168 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		AFC18DE42606A36D0016B168 /* BasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketView.swift; sourceTree = "<group>"; };
+		AFC18DE72606A91E0016B168 /* dodo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = dodo.html; sourceTree = "<group>"; };
+		AFC18DEC26074B7C0016B168 /* ScrollView+SelectionSpecificView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScrollView+SelectionSpecificView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,12 +68,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF54159026065B380032EB75 /* SwiftHTMLParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF541564260643EA0032EB75 /* Sotre */ = {
+			isa = PBXGroup;
+			children = (
+				AF541565260643F70032EB75 /* FoodStore.swift */,
+			);
+			path = Sotre;
+			sourceTree = "<group>";
+		};
+		AF541571260648D70032EB75 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AFC18DE72606A91E0016B168 /* dodo.html */,
+				AF54156E260648D00032EB75 /* FoodList_TMP.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AF541573260656630032EB75 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AFC18DEC26074B7C0016B168 /* ScrollView+SelectionSpecificView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		AF6CD3242603BFC900CD8E59 = {
 			isa = PBXGroup;
 			children = (
@@ -58,9 +119,14 @@
 		AF6CD32F2603BFC900CD8E59 /* Dodo_App */ = {
 			isa = PBXGroup;
 			children = (
+				AF541573260656630032EB75 /* Utils */,
+				AF541571260648D70032EB75 /* Resources */,
+				AF541564260643EA0032EB75 /* Sotre */,
+				AFB62A8B2603C2B6005D6987 /* Models */,
+				AFB62A862603C241005D6987 /* ViewModels */,
+				AF6CD34B2603C0F800CD8E59 /* Views */,
 				AF6CD3302603BFC900CD8E59 /* AppDelegate.swift */,
 				AF6CD3322603BFC900CD8E59 /* SceneDelegate.swift */,
-				AF6CD3342603BFC900CD8E59 /* ContentView.swift */,
 				AF6CD3392603BFCB00CD8E59 /* Assets.xcassets */,
 				AF6CD33E2603BFCB00CD8E59 /* LaunchScreen.storyboard */,
 				AF6CD3412603BFCB00CD8E59 /* Info.plist */,
@@ -76,6 +142,41 @@
 				AF6CD33C2603BFCB00CD8E59 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AF6CD34B2603C0F800CD8E59 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AFB62A912603C879005D6987 /* MainMenuView.swift */,
+				AF6CD3342603BFC900CD8E59 /* FoodChooser.swift */,
+				AFA79D7026040CBE00E6C15A /* TabButton.swift */,
+				AFA79D732604168A00E6C15A /* NewsView.swift */,
+				AFA79D76260416C800E6C15A /* NewsBackdropCard.swift */,
+				AF6CD3482603C0EC00CD8E59 /* PizzaView.swift */,
+				AF54156026063D330032EB75 /* PizzaCarouseView.swift */,
+				AFC18DDE2606A2AF0016B168 /* ProfileView.swift */,
+				AFC18DE12606A35F0016B168 /* LocationView.swift */,
+				AFC18DE42606A36D0016B168 /* BasketView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AFB62A862603C241005D6987 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AFB62A872603C269005D6987 /* TypesViewModel.swift */,
+				AFA79D792604173900E6C15A /* ImageLoader.swift */,
+				AF541568260644250032EB75 /* FoodListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AFB62A8B2603C2B6005D6987 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AFB62A8C2603C2BE005D6987 /* Food.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +195,9 @@
 			dependencies = (
 			);
 			name = Dodo_App;
+			packageProductDependencies = (
+				AF54158F26065B380032EB75 /* SwiftHTMLParser */,
+			);
 			productName = Dodo_App;
 			productReference = AF6CD32D2603BFC900CD8E59 /* Dodo_App.app */;
 			productType = "com.apple.product-type.application";
@@ -121,6 +225,9 @@
 				Base,
 			);
 			mainGroup = AF6CD3242603BFC900CD8E59;
+			packageReferences = (
+				AF54158E26065B380032EB75 /* XCRemoteSwiftPackageReference "swift-html-parser" */,
+			);
 			productRefGroup = AF6CD32E2603BFC900CD8E59 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +245,7 @@
 				AF6CD3402603BFCB00CD8E59 /* LaunchScreen.storyboard in Resources */,
 				AF6CD33D2603BFCB00CD8E59 /* Preview Assets.xcassets in Resources */,
 				AF6CD33A2603BFCB00CD8E59 /* Assets.xcassets in Resources */,
+				AFC18DE82606A91E0016B168 /* dodo.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,9 +256,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFC18DE52606A36D0016B168 /* BasketView.swift in Sources */,
+				AFA79D7126040CBE00E6C15A /* TabButton.swift in Sources */,
+				AF54156F260648D00032EB75 /* FoodList_TMP.swift in Sources */,
+				AFB62A8D2603C2BE005D6987 /* Food.swift in Sources */,
+				AFA79D7A2604173900E6C15A /* ImageLoader.swift in Sources */,
 				AF6CD3312603BFC900CD8E59 /* AppDelegate.swift in Sources */,
+				AF541566260643F70032EB75 /* FoodStore.swift in Sources */,
+				AFA79D742604168A00E6C15A /* NewsView.swift in Sources */,
+				AFC18DE22606A35F0016B168 /* LocationView.swift in Sources */,
+				AFC18DED26074B7D0016B168 /* ScrollView+SelectionSpecificView.swift in Sources */,
+				AFB62A922603C879005D6987 /* MainMenuView.swift in Sources */,
+				AFA79D77260416C800E6C15A /* NewsBackdropCard.swift in Sources */,
+				AFC18DDF2606A2AF0016B168 /* ProfileView.swift in Sources */,
+				AF541569260644250032EB75 /* FoodListViewModel.swift in Sources */,
 				AF6CD3332603BFC900CD8E59 /* SceneDelegate.swift in Sources */,
-				AF6CD3352603BFC900CD8E59 /* ContentView.swift in Sources */,
+				AFB62A882603C269005D6987 /* TypesViewModel.swift in Sources */,
+				AF6CD3492603C0EC00CD8E59 /* PizzaView.swift in Sources */,
+				AF54156126063D330032EB75 /* PizzaCarouseView.swift in Sources */,
+				AF6CD3352603BFC900CD8E59 /* FoodChooser.swift in Sources */,
 				AF6CD3382603BFC900CD8E59 /* Dodo_App.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +473,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AF54158E26065B380032EB75 /* XCRemoteSwiftPackageReference "swift-html-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rnantes/swift-html-parser";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AF54158F26065B380032EB75 /* SwiftHTMLParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF54158E26065B380032EB75 /* XCRemoteSwiftPackageReference "swift-html-parser" */;
+			productName = SwiftHTMLParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		AF6CD3362603BFC900CD8E59 /* Dodo_App.xcdatamodeld */ = {

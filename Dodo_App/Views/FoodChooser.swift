@@ -12,54 +12,40 @@ var tabs = ["Пицца","Комбо","Закуски","Десерты", "Нап
 struct FoodChooser: View {
     
     @State var selected = tabs[0]
-    //@Namespace var animation:
+    @State var horizontalOffset: CGFloat
+    @State var startHorizontalOffset: CGFloat
     
     var body: some View {
         
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(alignment: .top, spacing: 16) {
-                ForEach(tabs, id: \.self) { tab in
-                    TabButton(title: tab, selected: $selected)
-                }
-            }
-            .padding(.leading, 11)
-        }.frame(height: 33, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-        
-    }
-}
-
-struct FoodChooserTop: View {
-    @State var selected = tabs[0]
-    //@Namespace var animation:
-    
-    var body: some View {
-        
-        VStack{
-            ZStack{
-                Rectangle()
-                    .frame(height: 120, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    .foregroundColor(.white)
-                    .shadow(radius: 10)
-                    .ignoresSafeArea()
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(alignment: .top, spacing: 16) {
-                        ForEach(tabs, id: \.self) { tab in
-                            TabButton(title: tab, selected: $selected)
-                        }
+        ZStack{            
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(alignment: .top, spacing: 16) {
+                    ForEach(tabs, id: \.self) { tab in
+                        TabButton(title: tab, selected: $selected)
                     }
-                    .padding(.leading, 11)
-                }.frame(height: 33, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-            }
-            
-            
-            Spacer()
+                }
+                .padding(.leading, 11)
+                .overlay(
+                    GeometryReader { proxy -> Color in
+                        let minX = proxy.frame(in: .global).minX
+                        
+                        DispatchQueue.main.async {
+                            if startHorizontalOffset == 0 {
+                                startHorizontalOffset = minX
+                            }
+                            
+                            horizontalOffset = startHorizontalOffset - minX
+                            print(horizontalOffset)
+                        }
+                        return Color.clear
+                    }
+                    .frame(width: 0, height: 0)
+                )
+            }.frame(height: 33, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            //.offset(if isChanged : CGSize(width: horizontalOffset, height: 0) : 0)
         }
         
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        FoodChooserTop()
+        
+        
     }
 }

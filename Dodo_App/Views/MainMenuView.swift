@@ -8,60 +8,65 @@
 import SwiftUI
 
 struct MainMenuView: View {
+    @State var offset: CGFloat = 0
+    @State var startOffset: CGFloat = 0
+    @State private var showingSheet = false
+    @State var horizontalOffset: CGFloat = 0
+    @State var startHorizontalOffset: CGFloat = 0
+    let topFloat: CGFloat = 170
     
     
     var body: some View {
-        
-        NavigationView{
-            TabView {
-                ScrollView(.vertical, showsIndicators: false) {
-                    VStack{
-                        NewsView()
-                        //body(for: FoodChooser(), viewTop: FoodChooserTop())
-                        FoodChooser()
-                        PizzaCarouseView(food: FoodList_TMP.pizzas)
-                        PizzaCarouseView(food: FoodList_TMP.snacks)
-                        Spacer()
+        ZStack{
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack{
+                    NewsView()
+                    FoodChooser(horizontalOffset: horizontalOffset, startHorizontalOffset: startHorizontalOffset)   
+                    PizzaCarouseView(food: FoodList_TMP.pizzas)
+                    PizzaCarouseView(food: FoodList_TMP.snacks)
+                    Spacer()
+                }
+                .overlay(
+                    GeometryReader { proxy -> Color in
+                        let minY = proxy.frame(in: .global).minY
+                        
+                        DispatchQueue.main.async {
+                            if startOffset == 0 {
+                                startOffset = minY
+                            }
+                            
+                            offset = startOffset - minY
+                        }
+                        return Color.clear
                     }
-                }.tabItem { TabButtonView(title: "Меню", icon: "house") }
-                
-                ProfileView().tabItem { TabButtonView(title: "Профиль", icon: "person") }
-                LocationView().tabItem { TabButtonView(title: "Контакты", icon: "location") }
-                BasketView().tabItem { TabButtonView(title: "Корзина", icon: "bag") }
+                    .frame(width: 0, height: 0)
+                )
+            }.zIndex(0)
+            
+            VStack{
+                ZStack{
+                    Rectangle()
+                        .frame(height: 50)
+                        .foregroundColor(.white)
+                        .shadow(radius: 10)
+                    FoodChooser(horizontalOffset: horizontalOffset, startHorizontalOffset: startHorizontalOffset)
+
+                }
+                Spacer()
             }
-            
-            
+            .opacity(offset >= topFloat ? 1 : 0)
         }
-        
-        
-        
     }
     
-    private func body<T:View>(for viewFloat: T, viewTop: T) -> some View {
-        GeometryReader {
-            geometry in viewFloat
-            let intersection = UIScreen.main.bounds.intersection(geometry.frame(in: CoordinateSpace.global))
-            if !intersection.equalTo(geometry.frame(in: CoordinateSpace.global)) {
-                viewTop
-            }
-            else {
-                viewFloat
-            }
-        }
+    
+    func getOffset() -> CGSize {
+        var size: CGSize = .zero
+        size.width = offset
+        size.height = -offset
+        return size
     }
 }
 
-struct TabButtonView: View {
-    var title: String
-    var icon: String
-    
-    var body: some View {
-        VStack{
-            Image(systemName: icon)
-            Text(title)
-        }
-    }
-}
 
 struct MainMenuView_Previews: PreviewProvider {
     static var previews: some View {
